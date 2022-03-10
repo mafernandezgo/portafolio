@@ -1,0 +1,43 @@
+
+.navBar{
+    align-items: center;
+    display: flex;
+    height: 3em;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.navBar a{
+    align-items: center;
+    color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    width: 7em;
+    font-weight: 200;
+}
+
+.navBar a:hover{
+    letter-spacing: 0.1em;
+    color: var(--viridianGreen);
+}
+
+.navBar a::before, 
+.navBar a::after{
+    border: 1px solid transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    margin: 0.5em auto;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    width: 0%;
+}
+
+.navBar a:hover::before, 
+.navBar a:hover::after{
+    width: 100%;
+    border: 1px solid var(--viridianGreen);
+}

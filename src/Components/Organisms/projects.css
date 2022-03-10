@@ -1,0 +1,67 @@
+.projects{
+    width: 100vw;
+    height: calc(240vh - 8rem);
+    position: absolute;
+    top: 200vh;
+    padding-top: 8rem;
+}
+
+.projects .projectsMain{
+    margin-top: 5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects .projectsMain > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+
+.projects .btnsProjects{
+    display: flex;
+    width: 80%;
+    position: relative;
+    margin: 2rem;
+    box-sizing: border-box;
+    align-self: center;
+    justify-content: space-around;
+}
+
+.projects .btnProjects{
+    color: rgb(61, 84, 103);
+    width: 8em;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.projects .projectsGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-rows: repeat(auto-fit, 230px);
+    grid-auto-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+    /* margin: 0 5rem; */
+    gap: 0.2em 1em;
+    /* max-width: 80%; */
+}
+
+
+.projects .projectsGrid .cardProject:nth-child(3){
+    grid-area: 1/3/4/4;
+}
+.projects .projectsGrid .cardProject:nth-child(9){
+    grid-area: 3/1/6/2;
+}
+.projects .projectsGrid .cardProject:nth-child(12){
+    grid-area: 4/3/7/4;
+}
+.projects .projectsGrid .cardProject:nth-child(3) > img,
+.projects .projectsGrid .cardProject:nth-child(9) > img,
+.projects .projectsGrid .cardProject:nth-child(12) > img {
+    height: 100%;
+}
+
+

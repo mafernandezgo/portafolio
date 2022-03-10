@@ -1,0 +1,94 @@
+.aboutMe{
+    width: 100vw;
+    height: calc(100vh - 8rem);
+    position: absolute;
+    top: 100vh;
+    padding-top: 5rem;
+}
+
+.amMain{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.amCards{
+    width: 80%;
+    height: 80%;
+}
+
+.mainMoreInfo.inactive, 
+.mainAboutMe.inactive {
+    overflow: hidden;
+    display: none;
+}
+
+.mainMoreInfo, 
+.mainAboutMe {
+    height: 100%;
+}
+
+h2{
+    align-items: center;
+    display: flex;
+    font-size: 3.5rem;
+    font-weight: 500;
+    justify-content: center;
+    margin: 0;
+    text-transform: uppercase;
+    color: var(--h2Color);
+}
+
+.btnNext{
+    align-items: center;
+    border: none;
+    color: var(--white);
+    display: flex;
+    font-size: 2rem;
+    height: 4rem;
+    justify-content: center;
+    margin-left: 0;
+    position: absolute;
+    transition: background 0.2s linear;
+    width: 4rem;
+    transform: rotate(180deg);
+    box-shadow: 0px 0px 0px rgba(163, 177, 198, 0.6),
+              -0px -0px 0px rgba(255, 255, 255,0.5);
+}
+
+.btnNext{
+    animation: btnNextAnimation 2s infinite ease-in-out;
+    top: 20%;
+    right: 10%;
+}
+
+.btnNext span{
+    display: flex;
+}
+
+.btnNext.before{
+    left: 5%;
+    top: 85%;
+}
+
+.btnNext.before span{
+    position: relative;
+    transform-origin: center center;
+    transform: rotate(180deg);
+}
+
+@keyframes btnNextAnimation {
+    0% { 
+        transform: translatex(20px);
+        font-size: 2rem;
+    } 
+    50% {
+        transform: translatex(0px);
+        font-size: 2.5rem;
+    }
+    100% {
+        transform: translatex(20px);
+        font-size: 2rem;
+    }
+}

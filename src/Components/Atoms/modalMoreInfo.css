@@ -1,0 +1,111 @@
+
+.modalMoreInfo{
+    position: fixed;
+    z-index: 20;
+    width: 100vw;
+    height: calc(100vh - 5em);
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    display: grid;
+    place-items: center;
+}
+
+.modalMoreInfo .modalContainer{
+    width: 40rem;
+    height: 30rem;
+    background-color: white;
+    border-radius: var(--radius);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.modalMoreInfo .modalContainer h3{
+    justify-self: center;
+}
+
+.modalMoreInfo .modalContainer .modalImg{
+    max-height: 300px;
+    max-width: initial;
+    /* transition: all 1s linear; */
+    transition: all 10s linear;
+}
+
+.modalMoreInfo .modalContainer .tagsWrapper{
+    display: flex;
+    align-items: center;
+}
+
+.modalMoreInfo .modalContainer .tags{
+    display: flex;
+}
+
+.modalMoreInfo .modalContainer .tag{
+    width: auto;
+    height: auto;
+    margin: 8px;
+    padding: 8px;
+    background-color: var(--viridianGreenT);
+    border-radius: var(--radius);
+    text-transform: capitalize;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    
+}
+
+.modalMoreInfo .modalContainer .links{
+    display: flex;
+}
+
+.modalMoreInfo .modalContainer .link{
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(61, 84, 103);
+}
+
+
+.modalMoreInfo .modalContainer .link:hover > div{
+    animation: deployAnimation 2s infinite;
+}
+
+
+.modalMoreInfo .modalContainer .carousel {
+    display: flex;
+    align-items: center;
+}
+
+@keyframes deployAnimation {
+    0% {
+        transform: translate(-5px, 5px);
+    }
+
+    50% {
+        transform: translate(5px, -5px) ;
+    }
+
+    100%{
+        transform: translate(-3px, 3px)  ;
+    }
+}
+
+.modalMoreInfo .modalContainer .link.unavailable{
+    background-color: red;
+    cursor: not-allowed;
+    background-color: rgb(172, 170, 170);
+    box-shadow: none;
+    
+}
+
+.modalMoreInfo .modalContainer .link.unavailable:hover > div{
+    animation: none ;
+}
+
+

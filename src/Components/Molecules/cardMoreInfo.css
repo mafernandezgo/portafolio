@@ -1,0 +1,98 @@
+
+h3{
+    color: var(--blueSapphire);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.cardMoreInfo{
+    border-radius: var(--radius);
+    border: var(--border);
+    color:var(--white);
+    display: grid;
+    grid-template: 1fr 0.4fr / 1fr 0.6fr ;
+    height: 100%;
+    position: relative;
+}
+
+
+
+.cardMoreInfo h2{
+    grid-area: 2/2/3/3;
+    border-top: var(--border);
+}
+
+.cardMoreInfo .year{
+    font-weight: 400;
+}
+
+.cardMoreInfo > div{
+    grid-area: 1/1/3/2;
+    padding: 3em;
+    box-sizing: border-box;
+    border-right: var(--border);
+}
+
+.cardMoreInfo > div .education,
+.cardMoreInfo > div .experience {
+    display: flex;
+    max-width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5em;
+}
+
+.cardMoreInfo > div p{
+    list-style: none;
+    font-weight: 200;
+    margin: 0;
+}
+
+.cardMoreInfo aside{
+    grid-area: 1/2/2/3;
+    padding: 3em;
+}
+
+.cardMoreInfo aside div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cardMoreInfo aside div .points{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    color: var(--points);
+}
+
+.cardMoreInfo .btnNext{
+    left: -2.5rem;
+    bottom: -2.5rem;
+    animation: btnNextAnimation 2s infinite ease-in-out;
+}
+
+.cardMoreInfo .btnNext:hover{
+    padding-right: 0.5em;
+    box-shadow: inset -3px -3px 1px 1px   rgba(0, 0, 0, 0.151);
+    background: var(wi)
+}
+
+@keyframes btnNextAnimation {
+    0% { 
+        transform: translateX(0px);
+        font-size: 2rem;
+    } 
+    50% {
+        transform: translateX(20px);
+        font-size: 2.5rem;
+    }
+    100% {
+        transform: translateX(0px);
+        font-size: 2rem;
+    }
+}
+
