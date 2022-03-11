@@ -9,7 +9,6 @@
 
 h4{
     font-weight: 300;
-    color: red
 }
 
 .contact .contactMain{
@@ -17,7 +16,7 @@ h4{
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 70%;
 }
 
 .contact .sentEmail {
@@ -42,10 +41,11 @@ h4{
     display: flex;
     align-items: center;
     margin: 0.6em 0;
+    height: 2rem;
 }
 
 .contact .personalInfo h3{
-    width: 15rem;
+    width: 8rem;
     text-transform: capitalize;
 }
 
@@ -64,6 +64,7 @@ h4{
 .contact .personalInfo .btnSocial{
     margin: auto 10px auto 0;
     height: auto;
+    cursor: unset;
 }
 
 .socialMediaName{
@@ -77,13 +78,8 @@ h4{
 
 .socialMediaRoot{
     transition: transform 0.4s linear;
-}
-
-.socialMediaRoot{
     transition-delay: 1s;
     z-index: -1;
-}
-.socialMediaRoot{
     /* display: none; */
     position: absolute;
     font-size: 0.7rem;

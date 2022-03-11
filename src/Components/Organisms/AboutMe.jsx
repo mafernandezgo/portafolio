@@ -19,10 +19,10 @@ function AboutMe () {
                     <div className={`mainAboutMe ${ toggle === true && "inactive"}`}>
                         <CardAboutMe />
                     </div>
-                    <div className={`mainMoreInfo ${ toggle === false && "inactive"}`}>
+                    {/* <div className={`mainMoreInfo ${ toggle === false && "inactive"}`}>
                         < CardMoreInfo />
                     </div>
-                    <button onClick={handlerBtnAboutMe} className={`btnNext neumorphism ${ toggle === true && "before"}`}><span><MdOutlineArrowForwardIos/></span></button>
+                    <button onClick={handlerBtnAboutMe} className={`btnNext neumorphism ${ toggle === true && "before"}`}><span><MdOutlineArrowForwardIos/></span></button> */}
                 </div>
             </section>
         </section>

@@ -64,7 +64,7 @@
 }
 
 .header .logo:hover > .heart{
-    animation: heartBeating 0.8s infinite;
+    animation: heartBeating 0.5s infinite;
     
 }
 
@@ -72,7 +72,7 @@
     /* border: 1px solid red; */
     display: flex;
     background-color: white;
-    transition: all 2s linear;
+    transition: all 1s linear;
 }
 
 
@@ -82,19 +82,19 @@
         transform: scale(1) translateY(-1px);
     }
     20%{
-        color: #F2BF6C;
+        color: #EDE342;
         transform: scale(1.5) translateY(-1.5px);
     }
     40%{
-        color: #F69A97;
+        color: #F2BF6C;
         transform: scale(2) translateY(-2px);
     }
     60%{
-        color: #FB76C1;
+        color: #F69A97;
         transform: scale(2.5) translateY(-2.5px);
     }
     80%{
-        color: #FF51EB;
+        color: #FB76C1;
         transform: scale(3) translateY(-3px);
     }
     100%{

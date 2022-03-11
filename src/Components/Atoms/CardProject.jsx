@@ -32,7 +32,7 @@ function CardProject (props) {
     return(
         <div onMouseOver={nameShow} onMouseOut={nameShow} className="cardProject">
             <h1 className={` cardProjectTitle ${showName === true && "active"}`}>{name}</h1>
-            <img src={img} alt={name} />
+            <img src={process.env.PUBLIC_URL + img} alt={name} />
             <button onClick={modalOpen} className={` openModal  ${showName === true && "active neumorphism"}`}>more Info</button>
             {showModal && <ModalMoreInfo
                                         name={name} 

@@ -14,7 +14,7 @@
 }
 
 .amCards{
-    width: 80%;
+    width: 70%;
     height: 80%;
 }
 
@@ -54,7 +54,7 @@ h2{
     width: 4rem;
     transform: rotate(180deg);
     box-shadow: 0px 0px 0px rgba(163, 177, 198, 0.6),
-              -0px -0px 0px rgba(255, 255, 255,0.5);
+                -0px -0px 0px rgba(255, 255, 255,0.5);
 }
 
 .btnNext{

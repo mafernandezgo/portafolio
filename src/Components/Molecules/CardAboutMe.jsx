@@ -1,5 +1,7 @@
 
 import './cardAboutMe.css'
+import {RiHtml5Fill, RiReactjsFill, RiCss3Fill} from 'react-icons/ri'
+import{SiTailwindcss, SiBootstrap, SiJavascript} from 'react-icons/si'
 
 function CardAboutMe (){
     return (
@@ -10,11 +12,12 @@ function CardAboutMe (){
             <aside>
                 <h3>soft skills</h3>
                 <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
+                    <li><span><RiHtml5Fill/></span> html</li>
+                    <li><span><RiCss3Fill/></span> css</li>
+                    <li><span><SiTailwindcss/></span> Tailwind</li>
+                    <li><span><SiBootstrap/></span>Bootstrap</li>
+                    <li><span><SiJavascript/></span>Javascript</li>
+                    <li><span><RiReactjsFill/></span> React</li>
                 </ul>
             </aside>
         </section>

@@ -40,7 +40,7 @@ function ModalMoreInfo (props) {
                     <button onClick={handlerLeft} className="neumorphism imgBefore">
                         <MdArrowBackIos />
                     </button>
-                    <img className="modalImg" src={imgCarousel[indexImg]} />
+                    <img className="modalImg" src={process.env.PUBLIC_URL + imgCarousel[indexImg]} />
                     <button onClick={handlerRigth} className="neumorphism imgNext">
                         <MdOutlineArrowForwardIos />
                     </button>

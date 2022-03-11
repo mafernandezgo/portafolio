@@ -1,14 +1,14 @@
 :root{
   --white: #000;
   --richBack: rgb(0, 18, 25);
-  --blueSapphire: rgb(201, 218, 234);
+  --blueSapphire: rgb(220, 237, 49);
   --points:rgba(241, 237, 238,0.5);
   --viridianGreen: rgb(220, 237, 49);
   --viridianGreenT: rgb(201, 218, 234);
   --middleBlueGreen: rgb(148, 210, 189);
   --mediumChampagne: rgb(233, 216, 166);
   --mediumChampagneT: rgb(233, 216, 166,0.6);
-  --h2Color: rgb(220, 237, 49);
+  --h2Color: rgb(61, 84, 103);
   --blue:rgb(61, 84, 103);
   /* --points:rgb(237, 125, 58); */
   --alloyOrange: rgb(202, 103, 2);
@@ -20,7 +20,8 @@
   --raleway: 'Raleway', sans-serif;
   --rockSalt: 'Rock Salt', cursive;
   --border: 2px solid rgb(201, 218, 234);
-  --radius: 1px;
+  --borderV: 2px solid rgba(220, 237, 49,0.4);
+  --radius: 10px;
 }
 
 body {
@@ -52,7 +53,7 @@ p{
 }
 
 .neumorphism:hover{
-  background-color: var(--h2Color);
+  background-color: var(--viridianGreen);
   box-shadow: inset 5px 5px 8px rgba(163, 177, 198, 0.4),
   -5px -5px 8px rgba(255, 255, 255,0.5);
 }

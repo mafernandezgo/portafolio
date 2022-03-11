@@ -76,7 +76,7 @@ function Projects () {
         },
         {
             id:"8",
-            name: "Planeador",
+            name: "Planner",
             img: "/assets/Planner/planner1.jpg",
             imgCarousel: [ 
                 "/assets/Planner/planner1.jpg",
@@ -115,12 +115,12 @@ function Projects () {
         {
             id:"9",
             name: "Theme Switcher",
-            img: "/assets/SwitchTheme/SwitchTheme1.jpg",
+            img: "/assets/SwitchTheme/switchTheme1.jpg",
             imgCarousel: [ 
-                "/assets/SwitchTheme/SwitchTheme1.jpg", 
-                "/assets/SwitchTheme/SwitchTheme4.jpg",
-                "/assets/SwitchTheme/SwitchTheme3.jpg", 
-                "/assets/SwitchTheme/SwitchTheme2.jpg",
+                "/assets/SwitchTheme/switchTheme1.jpg", 
+                "/assets/SwitchTheme/switchTheme4.jpg",
+                "/assets/SwitchTheme/switchTheme3.jpg", 
+                "/assets/SwitchTheme/switchTheme2.jpg",
             ],
             tags: ["responsive","javascript", "html y css"],
             urlDeploy: "https://mafernandezgo.github.io/social-media-dashboard-with-theme-switcher-master/",
