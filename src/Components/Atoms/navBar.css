@@ -9,7 +9,7 @@
 
 .navBar a{
     align-items: center;
-    color: var(--blue);
+    color: white;
     display: flex;
     flex-direction: column;
     letter-spacing: 0;

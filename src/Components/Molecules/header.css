@@ -8,21 +8,22 @@
     top: 0;
     width: 100vw;
     z-index: 30;
-    background-color: white;
-    display: none;
+    display: flex;
     overflow: hidden;
-    
+    transition: all 1s linear;
 }
 
 .header.neumorphism{
     margin:0;
-    border-radius:0
+    border-radius:0;
+    background-color:var(--blue);
 }
 
-.header.neumorphism:hover{
+/* .header.neumorphism:hover{
     background-color: white;
     box-shadow: none;
-}
+    color: var(--blue);
+} */
 
 .header .logo{
     color: var(--viridianGreen);
@@ -66,13 +67,6 @@
 .header .logo:hover > .heart{
     animation: heartBeating 0.5s infinite;
     
-}
-
-.header.activeHeader{
-    /* border: 1px solid red; */
-    display: flex;
-    background-color: white;
-    transition: all 1s linear;
 }
 
 

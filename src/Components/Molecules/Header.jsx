@@ -8,22 +8,22 @@ function Header () {
     const [positionY, setPositionY]= useState(0)
     const [activeHeader, setActiveHeader]= useState(false)
     
-    document.addEventListener("scroll", ()=> {
-        setPositionY(window.pageYOffset)
+    // document.addEventListener("scroll", ()=> {
+    //     setPositionY(window.pageYOffset)
         
-        if(positionY > 400){
-            setActiveHeader(true)
-        } else if (positionY < 400){
-            setActiveHeader(false)
-        } else if(positionY === 0){
-            setActiveHeader(false)
-        }
+    //     if(positionY > 530){
+    //         setActiveHeader(true)
+    //     } else if (positionY < 530){
+    //         setActiveHeader(false)
+    //     } else if(positionY === 0){
+    //         setActiveHeader(false)
+    //     }
         // console.log(activeHeader)
-    })
+    // })
     
    
     return(
-        <header className={`${activeHeader === true && "activeHeader"} header neumorphism`}>
+        <header className={`header neumorphism`}>
             <a href="" className="logo"> 
                 <div className="dog"><GiSittingDog/></div> 
                 <div className="heart"><BsSuitHeartFill/></div> 

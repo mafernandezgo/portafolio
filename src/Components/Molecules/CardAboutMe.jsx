@@ -7,17 +7,17 @@ function CardAboutMe (){
     return (
         <section className="cardAboutMe">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur ut suscipit doloremque consectetur perferendis autem exercitationem, sunt dolores saepe quam inventore molestias eum temporibus. Eveniet facere velit natus maxime quidem.</p>
+            <p>I'm a Mechanical Engineer with 4 years of experience in development of engineering projects, and now I have been dedicated the last half year exclusively to web development.</p>
             <div className="img"><div className="filterColor"></div></div>
             <aside>
-                <h3>soft skills</h3>
+                <h3>Skills</h3>
                 <ul>
-                    <li><span><RiHtml5Fill/></span> html</li>
-                    <li><span><RiCss3Fill/></span> css</li>
-                    <li><span><SiTailwindcss/></span> Tailwind</li>
-                    <li><span><SiBootstrap/></span>Bootstrap</li>
-                    <li><span><SiJavascript/></span>Javascript</li>
-                    <li><span><RiReactjsFill/></span> React</li>
+                    <li><div><span><RiHtml5Fill/></span></div> html</li>
+                    <li><div><span><RiCss3Fill/></span></div> css</li>
+                    <li><div><span><SiTailwindcss/></span></div> Tailwind</li>
+                    <li><div><span><SiBootstrap/></span> </div>Bootstrap</li>
+                    <li><div><span><SiJavascript/></span> </div>Javascript</li>
+                    <li><div><span><RiReactjsFill/></span></div> React</li>
                 </ul>
             </aside>
         </section>

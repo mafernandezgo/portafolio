@@ -1,4 +1,11 @@
-
+:root{
+    --html: #e34c26;
+    --css: #264de4;
+    --tailwind: rgb(14,165,233);
+    --bootstrap: #7952b3;
+    --javascript: #F0DB4F;
+    --react:#61dafb;
+}
 
 .cardAboutMe{
     border-radius: var(--radius);
@@ -20,6 +27,7 @@
     border-top:0 ;
     margin: 0;
     padding: 3em;
+    line-height: 2;
 }
 
 .cardAboutMe aside{
@@ -63,26 +71,137 @@
 .cardAboutMe ul li span{
     align-self: center;
     display: flex;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 0.2em;
 }
-.cardAboutMe ul li:first-child span{ 
-    color:#e34c26;
+
+.cardAboutMe ul li div{
+    border-radius: 50%;
+    position: relative;
+    padding: 5px;
+    /* background-color: red; */
+    animation-delay: 0.2s;
 }
-.cardAboutMe ul li:nth-child(2) span{
-    color:#264de4
+
+.cardAboutMe ul li:first-child div{
+    animation: zoominHtml 3s infinite;
 }
-.cardAboutMe ul li:nth-child(3) span{
-    color: rgb(14,165,233)
+.cardAboutMe ul li:nth-child(2) div{
+    animation: zoominCss 3s infinite;
 }
-.cardAboutMe ul li:nth-child(4) span{
-    color: #7952b3
+.cardAboutMe ul li:nth-child(3) div{
+    animation: zoominTailwind 3s infinite;
 }
-.cardAboutMe ul li:nth-child(5) span{
-    color: #F0DB4F
+.cardAboutMe ul li:nth-child(4) div{
+    animation: zoominBootstrap 3s infinite;
 }
-.cardAboutMe ul li:nth-child(6) span{
-    color: #61dafb;
+.cardAboutMe ul li:nth-child(5) div{
+    animation: zoominJavascript 3s infinite;
 }
+.cardAboutMe ul li:nth-child(6) div{
+    animation: zoominReact 3s infinite;
+}
+
+
+.cardAboutMe ul li div::after, .cardAboutMe ul li div::before{
+    content: "";
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top:50%;
+    animation: rotate 3s infinite;
+    transform-origin: 16px 0px;
+}
+.cardAboutMe ul li div::before{
+
+    animation-delay: 0.4s;
+}
+
+.cardAboutMe ul li:first-child div::after,
+.cardAboutMe ul li:first-child div::before{ 
+    background-color: var(--html);
+}
+.cardAboutMe ul li:nth-child(2) div::after,
+.cardAboutMe ul li:nth-child(2) div::before{
+    background-color:var(--css)
+}
+.cardAboutMe ul li:nth-child(3) div::after,
+.cardAboutMe ul li:nth-child(3) div::before{
+    background-color: var(--tailwind)
+}
+.cardAboutMe ul li:nth-child(4) div::after,
+.cardAboutMe ul li:nth-child(4) div::before{
+    background-color: var(--bootstrap)
+}
+.cardAboutMe ul li:nth-child(5) div::after,
+.cardAboutMe ul li:nth-child(5) div::before{
+    background-color: var(--javascript)
+}
+.cardAboutMe ul li:nth-child(6) div::after,
+.cardAboutMe ul li:nth-child(6) div::before{
+    background-color: var(--react);
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotateZ(0deg);
+        }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+@keyframes zoominHtml {
+    0%{
+        color: none;
+    }   
+    100%{
+        color:var(--html);
+    }
+}
+@keyframes zoominCss {
+    0%{
+        color: none;
+    }
+    100%{
+        color:var(--css)
+    }
+}
+@keyframes zoominTailwind {
+    0%{
+        color: none;
+    }
+    100%{
+        color: var(--tailwind)
+    }
+}
+@keyframes zoominBootstrap {
+    0%{
+        color: none;
+    }
+    100%{
+        color: var(--bootstrap)
+    }
+}
+@keyframes zoominJavascript {
+    0%{
+        color: none;
+    }
+    100%{
+        color: var(--javascript)
+    }
+}
+@keyframes zoominReact{
+    0%{
+        color: none;
+    }
+    100%{
+        color: var(--react);
+    }
+}
+
 
 

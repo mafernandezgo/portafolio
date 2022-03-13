@@ -9,9 +9,6 @@ function Contact (){
         <section  id="contact" className="contact">
             <Title name="Contact"/>
             <div className="contactMain">
-                <div className="sentEmail">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia atque exercitationem corrupti eveniet quibusdam, provident dolores odio, rem id repellendus molestias possimus delectus! Fuga inventore, sint quod itaque quidem vero?</p>
-                </div>
                 <section className="personalInfo">
                     <div>
                         <h3>Email</h3>
@@ -40,6 +37,9 @@ function Contact (){
                         descargar mi CV <span> <FaFileDownload/> </span>
                     </a>
                 </section>
+                <footer>
+                    <p>Images taken from https://www.pexels.com/es-es/, icons react Icons </p>
+                </footer>
             </div>
         </section>
     )
