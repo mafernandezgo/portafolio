@@ -31,6 +31,7 @@
     width: 560px;
     height: 560px;
     border-radius:56% 44% 68% 32% / 68% 68% 32% 32%  ;
+    /* border-radius:72% 28% 68% 32% / 68% 27% 73% 32%  ; */
     background: var(--viridianGreen);
     z-index: -10;
     transform: translateY(-50%);
