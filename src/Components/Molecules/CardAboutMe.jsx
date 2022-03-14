@@ -7,7 +7,7 @@ function CardAboutMe (){
     return (
         <section className="cardAboutMe">
             <h2>About Me</h2>
-            <p>I'm a Mechanical Engineer with 4 years of experience in development of engineering projects, and now I have been dedicated the last half year exclusively to web development.</p>
+            <p>I'm a Mechanical Engineer with 4 years of experience in engineering projects development , and now I have been dedicated the last half year exclusively to web development.</p>
             <div className="img"><div className="filterColor"></div></div>
             <aside>
                 <h3>Skills</h3>

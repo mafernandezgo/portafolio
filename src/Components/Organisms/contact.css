@@ -7,16 +7,12 @@
     
 }
 
-h4{
-    font-weight: 300;
-}
-
 .contact .contactMain{
-    margin: 5rem auto auto; 
-    position: relative;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    height: calc(100% - 5rem);
+    margin: 5rem auto auto; 
+    position: relative;
 }
 
 .contact .sentEmail {
@@ -34,7 +30,8 @@ h4{
 
 .contact .personalInfo{
     display: grid;
-    margin: 3em 0;
+    margin: 3em auto;
+    width: 70%;
 }
 
 .contact .personalInfo > div{
@@ -125,4 +122,20 @@ h4{
     margin: 1em;
     color: transparent;
     width: 15px;
+}
+
+.contact .contactMain footer{
+    background: var(--viridianGreenT);
+    bottom: 0;
+    color: var(--blue);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+
+.contact .contactMain footer a{
+    color: rgb(106, 114, 21);
+    text-decoration: none;
 }

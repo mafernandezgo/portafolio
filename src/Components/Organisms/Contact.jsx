@@ -38,7 +38,7 @@ function Contact (){
                     </a>
                 </section>
                 <footer>
-                    <p>Images taken from https://www.pexels.com/es-es/, icons react Icons </p>
+                    <p>Images taken from <a href="https://www.pexels.com/es-es/"> Pexels</a> , icons from <a href="https://react-icons.github.io/react-icons">React Icons</a> </p>
                 </footer>
             </div>
         </section>

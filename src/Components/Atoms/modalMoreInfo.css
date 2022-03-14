@@ -80,6 +80,7 @@
 .modalMoreInfo .modalContainer .carousel {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 @keyframes deployAnimation {

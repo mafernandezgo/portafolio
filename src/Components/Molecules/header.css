@@ -97,39 +97,4 @@
     }
 }
 
-@keyframes logoChange {
-    0%{
-        background: linear-gradient( to left top,#DDED31, #E1DC46)
-    }
-    10%{
-        background: linear-gradient( to left top,#E1DC46, #E5CA5A)
-    }
-    60%{
-        background: linear-gradient( to left top,#E5CA5A, #E8B96F)
-    }
-    30%{
-        background: linear-gradient( to left top,#E8B96F, #ECA884)
-    }
-    40%{
-        background: linear-gradient( to left top,#ECA884, #F09698)
-    }
-    50%{
-        background: linear-gradient( to left top,#F09698, #F485AD)
-    }
-    60%{
-        background: linear-gradient( to left top,#F485AD, #F774C2)
-    }
-    70%{
-        background: linear-gradient( to left top,#F774C2, #FB62D6)
-    }
-    80%{
-        background: linear-gradient( to left top,#FB62D6, #FF51EB)
-    }
-    90%{
-        background: linear-gradient( to left top,#FF51EB, #FC61D8)
-    }
-    100%{
-        background: linear-gradient( to left top,#FC61d8, #DDED31)
-    }
-}
 
