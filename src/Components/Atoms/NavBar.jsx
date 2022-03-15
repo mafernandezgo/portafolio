@@ -1,12 +1,27 @@
 import './navBar.css'
+import {AiOutlineHome,AiOutlineContacts} from 'react-icons/ai'
+import {SiAboutdotme} from 'react-icons/si'
+import {GrProjects} from 'react-icons/gr'
 
-function NavBar () {
+
+function NavBar (props) {
+    let displayMenu = props.displayMenu
+    let setDisplayMenu = props.setDisplayMenu
+    // console.log(displayMenu)
+
+    function closeMenu (){
+        setDisplayMenu(false)
+    }
+
     return(
-        <nav className="navBar">
-            <a href="#home">Home</a>
-            <a href="#aboutMe">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+        <nav className={`navBar ${displayMenu === true && 'active'}`}>
+            <div className="menuResponsive"></div>
+            <ul>
+                <a  onClick={closeMenu} href="#home">Home <span className="responsiveIconsNavBar"></span></a>
+                <a onClick={closeMenu} href="#aboutMe">About Me <span className="responsiveIconsNavBar"></span></a>
+                <a onClick={closeMenu} href="#projects">Projects <span className="responsiveIconsNavBar"></span></a>
+                <a onClick={closeMenu} href="#contact">Contact <span className="responsiveIconsNavBar"></span></a>
+            </ul>
         </nav>
     )
 }

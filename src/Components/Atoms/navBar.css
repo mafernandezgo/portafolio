@@ -7,6 +7,10 @@
     width: 50%;
 }
 
+.navBar ul{
+    display: flex;
+}
+
 .navBar a{
     align-items: center;
     color: white;
@@ -20,6 +24,11 @@
 }
 
 .navBar a:hover{
+    letter-spacing: 0.1em;
+    color: var(--viridianGreen);
+}
+
+.navBar a:active{
     letter-spacing: 0.1em;
     color: var(--viridianGreen);
 }
@@ -40,4 +49,30 @@
 .navBar a:hover::after{
     width: 100%;
     border: 1px solid var(--viridianGreen);
+}
+
+@media (max-width:800px){
+    .navBar{
+        background-color: var(--blue);
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        right: 0;
+        top: 4rem;
+        display: none;
+        transition: all 2s linear;
+        height: 0;
+    }
+    
+    .navBar.active{
+        height: 100vh;    
+        display: flex;
+    }
+
+    .navBar ul{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
 }

@@ -1,20 +1,20 @@
 :root{
   --white: #000;
   --richBack: rgb(0, 18, 25);
-  --blueSapphire: rgb(220, 237, 49);
+  --blueSapphire: #9FC131;
   --points:rgba(241, 237, 238,0.5);
-  --viridianGreen: rgb(220, 237, 49);
+  --viridianGreen: #DBF227;
   --viridianGreenOpacity: rgb(220, 237, 49,0.4);
-  --viridianGreenT: rgb(201, 218, 234);
-  --h2Color: rgb(61, 84, 103);
-  --blue:rgb(61, 84, 103);
+  --viridianGreenT: #5062664f;
+  --h2Color: #042940;;
+  --blue:#042940;
   --comforter: 'Comforter', cursive;
   --poppins: 'Poppins', sans-serif;
   --raleway: 'Raleway', sans-serif;
   --rockSalt: 'Rock Salt', cursive;
-  --border: 2px solid rgb(201, 218, 234);
+  --border: 1px solid #506266;
   --borderV: 2px solid rgba(220, 237, 49,0.4);
-  --radius: 10px;
+  --radius: 4px;
 }
 
 body {
@@ -49,6 +49,7 @@ h3{
 
 h4{
   font-weight: 300;
+  margin: 0;
 }
 
 p{

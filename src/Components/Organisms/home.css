@@ -1,13 +1,11 @@
 .home{
-    width: 100vw;
-    height: calc(100vh - 4rem);
-    position: absolute;
-    left: 0;
-    top: 4rem;
-    display: flex;
-    justify-content: space-around;
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 100vh;
+    padding-top: 4rem;
+    justify-content: space-around;
+    width: 100vw;
+    box-sizing: border-box;
 }
 
 .home img{
@@ -44,4 +42,23 @@
 
 .home h1 span{
     color: var(--viridianGreen);
+}
+
+@media (max-width:800px){
+    .home{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home img{
+        width: 300px;
+    }
+
+    .home .imgWrapper::before{
+        width: 300px;
+        height: 300px;
+    }
+
+    .home h1{
+        font-size: 30px;
+    }
 }

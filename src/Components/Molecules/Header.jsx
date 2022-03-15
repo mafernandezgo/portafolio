@@ -2,11 +2,14 @@ import NavBar from "../Atoms/NavBar";
 import './header.css'
 import {GiCat,GiSittingDog} from 'react-icons/gi'
 import {BsSuitHeartFill} from 'react-icons/bs'
+import {AiOutlineMenu} from 'react-icons/ai'
 import { useState } from "react";
+
 
 function Header () {
     const [positionY, setPositionY]= useState(0)
     const [activeHeader, setActiveHeader]= useState(false)
+    const [displayMenu, setDisplayMenu]=useState(false)
     
     // document.addEventListener("scroll", ()=> {
     //     setPositionY(window.pageYOffset)
@@ -20,8 +23,10 @@ function Header () {
     //     }
         // console.log(activeHeader)
     // })
-    
-   
+    function menuDisplay(){
+        setDisplayMenu(!displayMenu)
+    }
+
     return(
         <header className={`header neumorphism`}>
             <a href="" className="logo"> 
@@ -30,7 +35,9 @@ function Header () {
                 <div className="cat"><GiCat /></div> 
             </a>
             {/* <a href="" className="logo">  <span>MF</span></a> */}
-            <NavBar />
+            <div onClick={menuDisplay} className="menuIcon"><AiOutlineMenu/></div>
+            {displayMenu && <NavBar/>}
+            <NavBar displayMenu= {displayMenu} setDisplayMenu={setDisplayMenu} />
         </header>
     )
 }

@@ -11,6 +11,8 @@
     display: flex;
     overflow: hidden;
     transition: all 1s linear;
+    box-sizing: border-box;
+    /* position: relative; */
 }
 
 .header.neumorphism{
@@ -96,5 +98,19 @@
         transform: scale(3.5) translateY(-3.5px);
     }
 }
+
+.menuIcon{
+    color: white;
+    font-size: 2rem;
+    display: none
+}
+
+@media(max-width:800px){
+    .menuIcon{
+        display: inline;
+    }
+}
+
+
 
 

@@ -18,6 +18,7 @@ function CardProject (props) {
 
     function nameShow (){
         setShowName(!showName)
+        console.log(showName)
     }
     function modalOpen(){
         setShowModal(!showModal)
@@ -29,8 +30,11 @@ function CardProject (props) {
         setShowName(!showName)
     }
 
+    
+
     return(
-        <div onMouseOver={nameShow} onMouseOut={nameShow} className="cardProject">
+        <div onClick={nameShow} onDoubleClick={nameShow} onMouseOver={nameShow} onMouseOut={nameShow} className="cardProject">
+        {/* <div onClick={nameShow} className="cardProject"> */}
             <h1 className={` cardProjectTitle ${showName === true && "active"}`}>{name}</h1>
             <img src={process.env.PUBLIC_URL + img} alt={name} />
             <button onClick={modalOpen} className={` openModal  ${showName === true && "active neumorphism"}`}>more Info</button>
