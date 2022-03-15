@@ -33,7 +33,7 @@ function CardProject (props) {
     
 
     return(
-        <div onClick={nameShow} onDoubleClick={nameShow} onMouseOver={nameShow} onMouseOut={nameShow} className="cardProject">
+        <div onMouseOver={nameShow} onMouseOut={nameShow} className="cardProject">
         {/* <div onClick={nameShow} className="cardProject"> */}
             <h1 className={` cardProjectTitle ${showName === true && "active"}`}>{name}</h1>
             <img src={process.env.PUBLIC_URL + img} alt={name} />

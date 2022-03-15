@@ -1,23 +1,23 @@
 
 .cardProject{
+    align-items: center;
+    border-radius: var(--radius);
     display: flex;
     flex-direction: column;
-    position: relative;
-    align-items: center;
-    width: 100%;
     height: 100%;
-    border-radius: var(--radius);
+    position: relative;
+    width: 100%;
 }
 
 .cardProject img{
-    border-radius: var(--radius);
     /* border: var(--border); */
-    box-sizing: border-box;
     /* max-width: 350px; */
-    position: relative;
-    z-index: 1;
-    width: 100%;
+    border-radius: var(--radius);
+    box-sizing: border-box;
     height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
 }
 
 .cardProject .cardProjectTitle{
@@ -39,41 +39,40 @@
 
 .cardProject .cardProjectTitle.active{
     color: var(--blue);
-    transition: all 0.5s cubic-bezier(0.82, -0.12, 1, 1);
     font-size: 1.5em;
+    transition: all 0.5s cubic-bezier(0.82, -0.12, 1, 1);
 }
 
 .cardProject .openModal{
-    background-color: transparent;
-    border: none;
-    color: transparent;
-    top: 55%;
-    font-size: 0rem;
     /* height:0rem; */
-    position: absolute;
-    width: 10rem;
-    z-index: 10;
-    justify-content: center;
-    text-transform: capitalize;
+    /* transition-delay: 0.3s; */
     /* transition-property:  border, color;
+    /* transition: all 0.5s linear; */
+    /* transition: color 0.5s linear 1s; */
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: transparent;
+    font-size: 0rem;
+    justify-content: center;
+    position: absolute;
+    text-transform: capitalize;
+    top: 55%;
     transition-duration: 0.5s;
     transition-timing-function: linear ;
-    /* transition: all 0.5s linear; */
-    /* transition-delay: 0.3s; */
-    border: 1px solid transparent;
-    /* transition: color 0.5s linear 1s; */
     transition: background-color 0.3s ease-in-out, 
-    color 0.3s ease-in-out ;
+                color 0.3s ease-in-out ;
+    width: 10rem;
+    z-index: 10;
 }
 
 .cardProject .openModal.active{
     background-color: var(--blueSapphire);
-    margin: 10px;
-    color: var(--blue);
     box-shadow: none;
+    color: var(--blue);
     cursor: pointer;
     font-size: 0.7rem;
     height:2rem;
+    margin: 10px;
     /* border: var(--borderV) */
 
 }
@@ -108,15 +107,15 @@
 
 .iconClose{
     /* border: 1px solid red; */
+    color: red;
+    font-size: 1.5em;
     height: 1rem;
-    right: 0;
     margin: 0.5rem;
     padding: 1rem;
     position: fixed;
+    right: 0;
     top: 5rem;
     z-index: 100;
-    font-size: 1.5em;
-    color: red;
 }
 
 @media (max-width:800px){

@@ -9,8 +9,8 @@
 }
 
 .cardMoreInfo h2{
-    grid-area: 2/2/3/3;
     border-top: var(--border);
+    grid-area: 2/2/3/3;
 }
 
 .cardMoreInfo .year{
@@ -26,16 +26,16 @@
 
 .cardMoreInfo > div .education,
 .cardMoreInfo > div .experience {
-    display: flex;
-    max-width: 80%;
     align-items: center;
+    display: flex;
     justify-content: space-between;
     margin: 1em;
+    max-width: 80%;
 }
 
 .cardMoreInfo > div p{
-    list-style: none;
     font-weight: 200;
+    list-style: none;
     margin: 0;
 }
 
@@ -45,29 +45,28 @@
 }
 
 .cardMoreInfo aside div{
-    display: flex;
     align-items: center;
-    width: 100%;
+    display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .cardMoreInfo aside div .points{
+    color: var(--points);
     display: flex;
     justify-content: space-between;
     width: 70%;
-    color: var(--points);
 }
 
 .cardMoreInfo .btnNext{
-    left: -2.5rem;
-    bottom: -2.5rem;
     animation: btnNextAnimation 2s infinite ease-in-out;
+    bottom: -2.5rem;
+    left: -2.5rem;
 }
 
 .cardMoreInfo .btnNext:hover{
-    padding-right: 0.5em;
     box-shadow: inset -3px -3px 1px 1px   rgba(0, 0, 0, 0.151);
-    background: var(wi)
+    padding-right: 0.5em;
 }
 
 @keyframes btnNextAnimation {

@@ -17,7 +17,7 @@ function NavBar (props) {
         <nav className={`navBar ${displayMenu === true && 'active'}`}>
             <div className="menuResponsive"></div>
             <ul>
-                <a  onClick={closeMenu} href="#home">Home <span className="responsiveIconsNavBar"></span></a>
+                <a onClick={closeMenu} href="#home">Home <span className="responsiveIconsNavBar"></span></a>
                 <a onClick={closeMenu} href="#aboutMe">About Me <span className="responsiveIconsNavBar"></span></a>
                 <a onClick={closeMenu} href="#projects">Projects <span className="responsiveIconsNavBar"></span></a>
                 <a onClick={closeMenu} href="#contact">Contact <span className="responsiveIconsNavBar"></span></a>

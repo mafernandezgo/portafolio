@@ -16,21 +16,21 @@
     color: white;
     display: flex;
     flex-direction: column;
+    font-weight: 200;
     letter-spacing: 0;
     text-decoration: none;
     transition: all 0.4s ease-in-out;
     width: 7em;
-    font-weight: 200;
 }
 
 .navBar a:hover{
-    letter-spacing: 0.1em;
     color: var(--viridianGreen);
+    letter-spacing: 0.1em;
 }
 
 .navBar a:active{
-    letter-spacing: 0.1em;
     color: var(--viridianGreen);
+    letter-spacing: 0.1em;
 }
 
 .navBar a::before, 
@@ -54,25 +54,25 @@
 @media (max-width:800px){
     .navBar{
         background-color: var(--blue);
+        display: none;
         flex-direction: column;
+        height: 0;
         justify-content: flex-start;
         position: fixed;
         right: 0;
         top: 4rem;
-        display: none;
         transition: all 2s linear;
-        height: 0;
     }
     
     .navBar.active{
-        height: 100vh;    
         display: flex;
+        height: 100vh;    
     }
 
     .navBar ul{
         display: flex;
         flex-direction: column;
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
 }

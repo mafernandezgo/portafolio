@@ -22,15 +22,15 @@ function Contact (){
                         <h3>Social</h3>
                         <ul>
                             <button href="" className=" btnSocial neumorphism github">
-                                <span className="socialMediaName"> <RiGithubFill/> Github</span>
+                                <span className="socialMediaName"> <span className="socialMediaIcon"><RiGithubFill/></span> <span className="socialMediaTitle">Github</span></span>
                                 <span className="socialMediaRoot">@mafernandezgo</span>
                             </button>
                             <button href="www.linkedin.com/in/mafernandezgo" className=" btnSocial neumorphism linkedin">
-                                <span className="socialMediaName"> <RiLinkedinBoxFill/> LinkedIn</span>
+                                <span className="socialMediaName"> <span className="socialMediaIcon"><RiLinkedinBoxFill/></span> <span className="socialMediaTitle">LinkedIn</span></span>
                                 <span className="socialMediaRoot">@mfernandezgomez</span>
                             </button>
                             <button href="" className=" btnSocial neumorphism discord">
-                                <span className="socialMediaName"> <SiDiscord/> Discord</span>
+                                <span className="socialMediaName"> <span className="socialMediaIcon"> <SiDiscord/></span> <span className="socialMediaTitle">Discord</span></span>
                                 <span className="socialMediaRoot">@mafernandezgo</span>
                             </button>
                         </ul>
