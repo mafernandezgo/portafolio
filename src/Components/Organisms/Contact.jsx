@@ -35,7 +35,7 @@ function Contact (){
                             </button>
                         </ul>
                     </div>
-                    <a className="neumorphism download" href={process.env.PUBLIC_URL + "/assets/ManuelaFernandez.pdf"} download>
+                    <a className="neumorphism download" href={process.env.PUBLIC_URL + "/assets/ManuelaFernandezCV.pdf"} download>
                         descargar mi CV <span> <FaFileDownload/> </span>
                     </a>
                 </section>

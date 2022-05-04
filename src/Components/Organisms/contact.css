@@ -1,207 +1,206 @@
-.contact{
-    box-sizing: border-box;
-    height: 100vh;
-    padding-top: 8rem;
-    width: 100vw;
+.contact {
+  box-sizing: border-box;
+  height: 100vh;
+  padding-top: 8rem;
+  width: 100vw;
 }
 
-.contact .contactMain{
-    display: flex;
-    flex-direction: column;
-    height: calc(100% - 5rem);
-    margin: 5rem auto auto; 
-    position: relative;
+.contact .contactMain {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 5rem);
+  margin: 5rem auto auto;
+  position: relative;
 }
 
 .contact .sentEmail {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.contact .personalInfo{
-    display: grid;
-    margin: 3em auto;
-    width: 70%;
+.contact .personalInfo {
+  display: grid;
+  margin: 3em auto;
+  width: 70%;
 }
 
-.contact .personalInfo > div{
-    align-items: center;
-    display: flex;
-    margin: 0.6em 0;
+.contact .personalInfo > div {
+  align-items: center;
+  display: flex;
+  margin: 0.6em 0;
 }
 
-.contact .personalInfo h3{
-    text-transform: capitalize;
-    width: 8rem;
+.contact .personalInfo h3 {
+  text-transform: capitalize;
+  width: 8rem;
 }
 
-.contact .personalInfo a{
-    align-items: center;
-    color: black;
-    display: flex;
-    height: 3em;
-    justify-content: center;
-    margin: 3em 0 0;
-    text-align: center;
-    text-decoration: none;
-    text-transform: capitalize;
+.contact .personalInfo a {
+  align-items: center;
+  color: black;
+  display: flex;
+  height: 3em;
+  justify-content: center;
+  margin: 3em 0 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
-.contact .personalInfo .btnSocial{
-    cursor: unset;
-    height: auto;
-    margin: auto 10px auto 0;
-    position: relative;
+.contact .personalInfo .btnSocial {
+  cursor: unset;
+  height: auto;
+  margin: auto 10px auto 0;
+  position: relative;
 }
 
-.socialMediaName{
-    align-items: center;
-    display: flex;
-    font-size: 0.8rem;
-    justify-content: space-evenly;
-    transition: transform 1s linear;
-    width: 7rem;
+.socialMediaName {
+  align-items: center;
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: space-evenly;
+  transition: transform 1s linear;
+  width: 7rem;
 }
 
-.socialMediaRoot{
-    /* display: none; */
-    align-items: center;
-    display: flex;
-    font-size: 0.7rem;
-    height: 100%;
-    justify-content: center;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transform: rotateX(270deg);
-    transition-delay: 1s;
-    transition: transform 0.4s linear;
-    width: 100%;
-    z-index: -1;
+.socialMediaRoot {
+  /* display: none; */
+  align-items: center;
+  display: flex;
+  font-size: 0.7rem;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotateX(270deg);
+  transition: transform 0.4s linear 1s;
+  width: 100%;
+  z-index: -1;
 }
 
-.contact .personalInfo a:hover > span{
-    color: white;
+.contact .personalInfo a:hover > span {
+  color: white;
 }
 
-.contact .personalInfo .github:hover{
-    background-color: #333;
-    color: white;
-    transition: all 0.6s linear;
+.contact .personalInfo .github:hover {
+  background-color: #333;
+  color: white;
+  transition: all 0.6s linear;
+  transition-delay: 0.2s;
 }
 
 .contact .personalInfo .btnSocial:hover > .socialMediaName {
-    transform: rotateX(270deg);
+  transform: rotateX(270deg);
 }
 
 .contact .personalInfo .btnSocial:hover > .socialMediaRoot {
-    transform: rotateX(360deg);
-    z-index: 1;
+  transform: rotateX(360deg);
+  z-index: 1;
 }
 
-.contact .personalInfo .github:hover{
+.contact .personalInfo .github:hover {
+  background-color: #333;
+  color: white;
+}
+.contact .personalInfo .linkedin:hover {
+  background-color: #0077b5;
+  color: white;
+}
+.contact .personalInfo .discord:hover {
+  background-color: #7289da;
+  color: white;
+}
+
+.contact .personalInfo .download span {
+  /* display: none; */
+  align-self: center;
+  color: transparent;
+  margin: 1em;
+  width: 15px;
+}
+
+.contact .contactMain footer {
+  background: var(--viridianGreenT);
+  bottom: 0;
+  color: var(--blue);
+  font-size: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.contact .contactMain footer a {
+  color: rgb(106, 114, 21);
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .contact .personalInfo {
+    box-sizing: border-box;
+    grid-template-rows: 1fr 2fr 1fr;
+    margin: auto auto;
+    padding: 1em;
+    width: 100%;
+  }
+
+  .contact .personalInfo h3 {
+    width: 6rem;
+  }
+
+  .contact .personalInfo .btnSocial {
+    height: 2rem;
+    margin: 0px auto 20px auto;
+    width: 9rem;
+  }
+
+  .contact .personalInfo div:nth-child(2) > h3 {
+    /* background: red; */
+    align-self: flex-start;
+  }
+
+  .contact .personalInfo div:nth-child(2) > ul {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact .personalInfo .download {
+    justify-self: center;
+    margin: 0;
+    width: 80%;
+  }
+
+  .contact .personalInfo .github {
     background-color: #333;
     color: white;
-}
-.contact .personalInfo .linkedin:hover{
-    background-color: #0077B5;
+  }
+  .contact .personalInfo .linkedin {
+    background-color: #0077b5;
     color: white;
-}
-.contact .personalInfo .discord:hover{
-    background-color: #7289DA;
+  }
+  .contact .personalInfo .discord {
+    background-color: #7289da;
     color: white;
-}
+  }
 
+  .contact .personalInfo .btnSocial .socialMediaName .socialMediaTitle {
+    display: none;
+  }
 
-.contact .personalInfo .download span{
-    /* display: none; */
-    align-self: center;
-    color: transparent;
-    margin: 1em;
-    width: 15px;
-}
-
-.contact .contactMain footer{
-    background: var(--viridianGreenT);
-    bottom: 0;
-    color: var(--blue);
-    font-size: 0.8em;
-    position: absolute;
-    text-align: center;
+  .contact .personalInfo .btnSocial .socialMediaName .socialMediaIcon {
+    display: flex;
+    justify-content: flex-start;
     width: 100%;
-}
+  }
 
-.contact .contactMain footer a{
-    color: rgb(106, 114, 21);
-    text-decoration: none;
-}
-
-@media (max-width:800px){
-    .contact .personalInfo{
-        box-sizing: border-box;
-        grid-template-rows: 1fr 2fr 1fr;
-        margin: auto auto;
-        padding: 1em;
-        width: 100%;
-    }
-
-    .contact .personalInfo h3{
-        width: 6rem;
-    }
-
-    .contact .personalInfo .btnSocial{
-        height: 2rem;
-        margin: 0px auto 20px auto;
-        width: 9rem;
-    }
-
-    .contact .personalInfo div:nth-child(2) > h3{
-        /* background: red; */
-        align-self: flex-start;
-    }
-
-    .contact .personalInfo div:nth-child(2) > ul{
-        align-self: flex-start;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
-
-    .contact .personalInfo .download{
-        justify-self: center;
-        margin: 0;
-        width: 80%;
-    }
-
-    .contact .personalInfo .github{
-        background-color: #333;
-        color: white;
-    }
-    .contact .personalInfo .linkedin{
-        background-color: #0077B5;
-        color: white;
-    }
-    .contact .personalInfo .discord{
-        background-color: #7289DA;
-        color: white;
-    }
-
-    .contact .personalInfo .btnSocial .socialMediaName .socialMediaTitle{
-        display: none;
-    }
-
-    .contact .personalInfo .btnSocial .socialMediaName .socialMediaIcon{
-        display : flex ;
-        justify-content: flex-start;
-        width: 100%;
-    }
-
-    .contact .personalInfo .btnSocial > .socialMediaRoot {
-        justify-content: center;
-        margin: 0 10px;
-        transform: rotateX(360deg);
-        z-index: 1;
-    }
+  .contact .personalInfo .btnSocial > .socialMediaRoot {
+    justify-content: center;
+    margin: 0 10px;
+    transform: rotateX(360deg);
+    z-index: 1;
+  }
 }

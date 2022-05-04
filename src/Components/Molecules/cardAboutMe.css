@@ -5,6 +5,7 @@
     --bootstrap: #7952b3;
     --javascript: #F0DB4F;
     --react:#61dafb;
+    --github: #333;
 }
 
 .cardAboutMe{
@@ -38,15 +39,15 @@
 }
 
 .cardAboutMe .img{
+    background: url(https://images.pexels.com/photos/4065864/pexels-photo-4065864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-position: center;
     background-size: cover;
-    background: url(https://images.pexels.com/photos/7015029/pexels-photo-7015029.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    border-bottom: var(--border);
-    border-left: var(--border);
-    border-radius: 0 0 var(--radius) 0;
     grid-area: 2/2/4/3;
     height: 100%;
     z-index: -4px;
+    border-bottom: var(--border);
+    border-left: var(--border);
+    border-radius: 0 0 var(--radius) 0;
 }
 
 .cardAboutMe .filterColor{
@@ -142,6 +143,10 @@
 .cardAboutMe ul li:nth-child(6) div::after,
 .cardAboutMe ul li:nth-child(6) div::before{
     background-color: var(--react);
+}
+.cardAboutMe ul li:nth-child(7) div::after,
+.cardAboutMe ul li:nth-child(7) div::before{
+    background-color: var(--github);
 }
 
 @keyframes rotate {
