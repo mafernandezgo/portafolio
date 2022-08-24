@@ -2,19 +2,12 @@ import { useState } from "react"
 import { GrClose } from "react-icons/gr"
 import "./cardProject.css"
 import ModalMoreInfo from "./ModalMoreInfo"
-// import img from './WeatherApp.jpg'
 
 function CardProject(props) {
   const [showName, setShowName] = useState(false)
   const [showModal, setShowModal] = useState(false)
   const [showCloseIcon, setShowCloseIcon] = useState(false)
-
-  const name = props.name
-  const imgCarousel = props.imgCarousel
-  const deployUrl = props.urlDeploy
-  const repositoryUrl = props.urlRepository
-  const tags = props.tags
-  const img = props.img
+  const { name, deployUrl, imgCarousel, repositoryUrl, tags, img } = props
 
   function nameShow() {
     setShowName(!showName)
