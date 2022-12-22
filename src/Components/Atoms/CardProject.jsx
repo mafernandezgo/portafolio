@@ -7,7 +7,7 @@ function CardProject(props) {
   const [showName, setShowName] = useState(false)
   const [showModal, setShowModal] = useState(false)
   const [showCloseIcon, setShowCloseIcon] = useState(false)
-  const { name, deployUrl, imgCarousel, repositoryUrl, tags, img } = props
+  const { name, urlDeploy, imgCarousel, urlRepository, tags, img } = props
 
   function nameShow() {
     setShowName(!showName)
@@ -39,8 +39,8 @@ function CardProject(props) {
         <ModalMoreInfo
           name={name}
           tags={tags}
-          deployUrl={deployUrl}
-          repositoryUrl={repositoryUrl}
+          deployUrl={urlDeploy}
+          repositoryUrl={urlRepository}
           imgCarousel={imgCarousel}
           img={img}
         />

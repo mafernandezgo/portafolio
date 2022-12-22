@@ -1,229 +1,229 @@
-:root{
-    --html: #e34c26;
-    --css: #264de4;
-    --tailwind: #0EA5E9;
-    --bootstrap: #7952b3;
-    --javascript: #F0DB4F;
-    --react:#61dafb;
-    --github: #333;
+:root {
+  --html: #e34c26;
+  --css: #264de4;
+  --tailwind: #0ea5e9;
+  --bootstrap: #7952b3;
+  --javascript: #f0db4f;
+  --react: #61dafb;
+  --github: #333;
 }
 
-.cardAboutMe{
-    border-radius: var(--radius);
-    border: var(--border);
-    color: var(--white);
-    display: grid;
-    grid-template: 0.7fr 2fr 1fr / 2.5fr 1fr ;
-    height: 100%;
-    position: relative;
+.cardAboutMe {
+  border-radius: var(--radius);
+  border: var(--border);
+  color: var(--white);
+  display: grid;
+  grid-template: 0.7fr 2fr 1fr / 2.5fr 1fr;
+  height: 100%;
+  position: relative;
 }
 
-.cardAboutMe h2{
-    border-bottom: var(--border);
-    grid-area: 1/1/2/3;
-    height: 100%;
+.cardAboutMe h2 {
+  border-bottom: var(--border);
+  grid-area: 1/1/2/3;
+  height: 100%;
 }
 
-.cardAboutMe p{
-    border-top:0 ;
-    font-size: 1.1em;
-    line-height: 2;
-    margin: 0;
-    padding: 3em;
+.cardAboutMe p {
+  border-top: 0;
+  font-size: 1.1em;
+  line-height: 2;
+  margin: 0;
+  padding: 3em;
 }
 
-.cardAboutMe aside{
-    border-top: var(--border);
-    margin: 0;
-    padding: 1em 3em;
+.cardAboutMe aside {
+  border-top: var(--border);
+  margin: 0;
+  padding: 1em 3em;
 }
 
-.cardAboutMe .img{
-    background: url(https://images.pexels.com/photos/4065864/pexels-photo-4065864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    background-position: center;
-    background-size: cover;
-    grid-area: 2/2/4/3;
-    height: 100%;
-    z-index: -4px;
-    border-bottom: var(--border);
-    border-left: var(--border);
-    border-radius: 0 0 var(--radius) 0;
+.cardAboutMe .img {
+  background: url(https://images.pexels.com/photos/4065864/pexels-photo-4065864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: center;
+  background-size: cover;
+  grid-area: 2/2/4/3;
+  height: 100%;
+  z-index: -4px;
+  border-bottom: var(--border);
+  border-left: var(--border);
+  border-radius: 0 0 var(--radius) 0;
 }
 
-.cardAboutMe .filterColor{
-    backdrop-filter: grayscale(1);
-    height: 100%;
-    width: 100%;
+.cardAboutMe .filterColor {
+  backdrop-filter: grayscale(1);
+  height: 100%;
+  width: 100%;
 }
 
-.cardAboutMe ul{
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
+.cardAboutMe ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
 
-.cardAboutMe li{
-    align-items: center;
-    color: var(--blue);
-    display: flex;
-    list-style: none;
-    text-transform: capitalize;
+.cardAboutMe li {
+  align-items: center;
+  color: var(--blue);
+  display: flex;
+  list-style: none;
+  text-transform: capitalize;
 }
 
-.cardAboutMe ul li span{
-    align-self: center;
-    display: flex;
-    font-size: 1em;
-    margin: 0.2em;
+.cardAboutMe ul li span {
+  align-self: center;
+  display: flex;
+  font-size: 1em;
+  margin: 0.2em;
 }
 
-.cardAboutMe ul li div{
-    /* background-color: red; */
-    animation-delay: 0.2s;
-    border-radius: 50%;
-    padding: 5px;
-    position: relative;
+.cardAboutMe ul li div {
+  /* background-color: red; */
+  animation-delay: 0.2s;
+  border-radius: 50%;
+  padding: 5px;
+  position: relative;
 }
 
-.cardAboutMe ul li:first-child div{
-    animation: zoominHtml 3s infinite;
+.cardAboutMe ul li:first-child div {
+  animation: zoominHtml 3s infinite;
 }
-.cardAboutMe ul li:nth-child(2) div{
-    animation: zoominCss 3s infinite;
+.cardAboutMe ul li:nth-child(2) div {
+  animation: zoominCss 3s infinite;
 }
-.cardAboutMe ul li:nth-child(3) div{
-    animation: zoominTailwind 3s infinite;
+.cardAboutMe ul li:nth-child(3) div {
+  animation: zoominTailwind 3s infinite;
 }
-.cardAboutMe ul li:nth-child(4) div{
-    animation: zoominBootstrap 3s infinite;
+.cardAboutMe ul li:nth-child(4) div {
+  animation: zoominBootstrap 3s infinite;
 }
-.cardAboutMe ul li:nth-child(5) div{
-    animation: zoominJavascript 3s infinite;
+.cardAboutMe ul li:nth-child(5) div {
+  animation: zoominJavascript 3s infinite;
 }
-.cardAboutMe ul li:nth-child(6) div{
-    animation: zoominReact 3s infinite;
+.cardAboutMe ul li:nth-child(6) div {
+  animation: zoominReact 3s infinite;
 }
 
-
-.cardAboutMe ul li div::after, .cardAboutMe ul li div::before{
-    animation: rotate 3s infinite;
-    border-radius: 50%;
-    content: "";
-    height: 3px;
-    left: 0px;
-    position: absolute;
-    top:50%;
-    transform-origin: 16px 0px;
-    width: 3px;
+.cardAboutMe ul li div::after,
+.cardAboutMe ul li div::before {
+  animation: rotate 3s infinite;
+  border-radius: 50%;
+  content: "";
+  height: 3px;
+  left: 0px;
+  position: absolute;
+  top: 50%;
+  transform-origin: 16px 0px;
+  width: 3px;
 }
-.cardAboutMe ul li div::before{
-    animation-delay: 0.4s;
+.cardAboutMe ul li div::before {
+  animation-delay: 0.4s;
 }
 
 .cardAboutMe ul li:first-child div::after,
-.cardAboutMe ul li:first-child div::before{ 
-    background-color: var(--html);
+.cardAboutMe ul li:first-child div::before {
+  background-color: var(--html);
 }
 .cardAboutMe ul li:nth-child(2) div::after,
-.cardAboutMe ul li:nth-child(2) div::before{
-    background-color:var(--css)
+.cardAboutMe ul li:nth-child(2) div::before {
+  background-color: var(--css);
 }
 .cardAboutMe ul li:nth-child(3) div::after,
-.cardAboutMe ul li:nth-child(3) div::before{
-    background-color: var(--tailwind)
+.cardAboutMe ul li:nth-child(3) div::before {
+  background-color: var(--tailwind);
 }
 .cardAboutMe ul li:nth-child(4) div::after,
-.cardAboutMe ul li:nth-child(4) div::before{
-    background-color: var(--bootstrap)
+.cardAboutMe ul li:nth-child(4) div::before {
+  background-color: var(--bootstrap);
 }
 .cardAboutMe ul li:nth-child(5) div::after,
-.cardAboutMe ul li:nth-child(5) div::before{
-    background-color: var(--javascript)
+.cardAboutMe ul li:nth-child(5) div::before {
+  background-color: var(--javascript);
 }
 .cardAboutMe ul li:nth-child(6) div::after,
-.cardAboutMe ul li:nth-child(6) div::before{
-    background-color: var(--react);
+.cardAboutMe ul li:nth-child(6) div::before {
+  background-color: var(--react);
 }
 .cardAboutMe ul li:nth-child(7) div::after,
-.cardAboutMe ul li:nth-child(7) div::before{
-    background-color: var(--github);
+.cardAboutMe ul li:nth-child(7) div::before {
+  background-color: var(--github);
 }
 
 @keyframes rotate {
-    0%{
-        transform: rotateZ(0deg);
-        }
-    100%{
-        transform: rotateZ(360deg);
-    }
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
 }
 
 @keyframes zoominHtml {
-    0%{
-        color: none;
-    }   
-    100%{
-        color:var(--html);
-    }
+  0% {
+    color: none;
+  }
+  100% {
+    color: var(--html);
+  }
 }
 @keyframes zoominCss {
-    0%{
-        color: none;
-    }
-    100%{
-        color:var(--css)
-    }
+  0% {
+    color: none;
+  }
+  100% {
+    color: var(--css);
+  }
 }
 @keyframes zoominTailwind {
-    0%{
-        color: none;
-    }
-    100%{
-        color: var(--tailwind)
-    }
+  0% {
+    color: none;
+  }
+  100% {
+    color: var(--tailwind);
+  }
 }
 @keyframes zoominBootstrap {
-    0%{
-        color: none;
-    }
-    100%{
-        color: var(--bootstrap)
-    }
+  0% {
+    color: none;
+  }
+  100% {
+    color: var(--bootstrap);
+  }
 }
 @keyframes zoominJavascript {
-    0%{
-        color: none;
-    }
-    100%{
-        color: var(--javascript)
-    }
+  0% {
+    color: none;
+  }
+  100% {
+    color: var(--javascript);
+  }
 }
-@keyframes zoominReact{
-    0%{
-        color: none;
-    }
-    100%{
-        color: var(--react);
-    }
+@keyframes zoominReact {
+  0% {
+    color: none;
+  }
+  100% {
+    color: var(--react);
+  }
 }
 
-@media (max-width:800px){
-    .cardAboutMe{
-        border: none;
-        grid-template: auto / 1fr;
-    }
-    .cardAboutMe p{
-        font-size: 1rem;
-    }
-    .cardAboutMe .img{
-        display: none;
-        overflow: hidden;
-    }
-    .cardAboutMe aside{
-        grid-area: 3/1/4/2;
-    }
-    .cardAboutMe ul{
-        flex-direction: column;
-        margin: 0;
-    }
+@media (max-width: 800px) {
+  .cardAboutMe {
+    border: none;
+    grid-template: auto / 1fr;
+  }
+  .cardAboutMe p {
+    font-size: 1rem;
+  }
+  .cardAboutMe .img {
+    display: none;
+    overflow: hidden;
+  }
+  .cardAboutMe aside {
+    grid-area: 3/1/4/2;
+  }
+  .cardAboutMe ul {
+    flex-direction: column;
+    margin: 0;
+  }
 }
