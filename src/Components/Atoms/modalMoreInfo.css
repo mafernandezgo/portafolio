@@ -1,29 +1,29 @@
 .modalMoreInfo {
   backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.5);
-  bottom: 0;
-  display: grid;
   height: 100%;
-  left: 0;
-  place-items: center;
-  position: fixed;
-  width: 100vw;
+  position: absolute;
+  width: 100%;
   z-index: 20;
 }
 
 .modalMoreInfo .modalContainer {
-  align-items: center;
-  background-color: white;
   border-radius: var(--radius);
+  height: 100%;
+  padding: 1em;
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  height: 30rem;
-  padding: 1em;
-  width: 40rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .modalMoreInfo .modalContainer h3 {
-  justify-self: center;
+  color: var(--blue);
+  font-size: 1.5em;
+  transition: all 0.5s cubic-bezier(0.82, -0.12, 1, 1);
+  font-weight: 700;
 }
 
 .modalMoreInfo .modalContainer .modalImg {
@@ -44,7 +44,7 @@
 
 .modalMoreInfo .modalContainer .tag {
   align-items: center;
-  background-color: var(--viridianGreenT);
+  background-color: white;
   border-radius: var(--radius);
   display: flex;
   font-size: 0.8em;
@@ -53,6 +53,27 @@
   padding: 8px;
   text-transform: capitalize;
   width: auto;
+  /* border: 1px solid red; */
+}
+
+.tag.Javascript {
+  color: var(--javascript);
+  border: 1px solid var(--javascript);
+}
+
+.tag.Html5 {
+  color: var(--html);
+  border: 1px solid var(--html);
+}
+
+.tag.Css3 {
+  color: var(--css);
+  border: 1px solid var(--css);
+}
+
+.tag.Reactjs {
+  color: var(--react);
+  border: 1px solid var(--react);
 }
 
 .modalMoreInfo .modalContainer .links {
@@ -68,28 +89,10 @@
   width: 2em;
 }
 
-.modalMoreInfo .modalContainer .link:hover > div {
-  animation: deployAnimation 2s infinite;
-}
-
 .modalMoreInfo .modalContainer .carousel {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
-}
-
-@keyframes deployAnimation {
-  0% {
-    transform: translate(-5px, 5px);
-  }
-
-  50% {
-    transform: translate(5px, -5px);
-  }
-
-  100% {
-    transform: translate(-3px, 3px);
-  }
 }
 
 .modalMoreInfo .modalContainer .link.unavailable {

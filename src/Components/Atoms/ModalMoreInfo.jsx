@@ -5,14 +5,23 @@ import { MdOutlineArrowForwardIos, MdArrowBackIos } from "react-icons/md"
 import "./modalMoreInfo.css"
 import { useState } from "react"
 
-function ModalMoreInfo(props) {
-  const name = props.name
-  const tags = props.tags
+import {
+  RiHtml5Fill,
+  RiReactjsFill,
+  RiCss3Fill,
+  RiGithubLine,
+} from "react-icons/ri"
+import { SiTailwindcss, SiBootstrap, SiJavascript } from "react-icons/si"
+
+function ModalMoreInfo({
+  name,
+  tags,
+  deployUrl,
+  repositoryUrl,
+  imgCarousel,
+  img,
+}) {
   let sortTags = tags.sort()
-  const deployUrl = props.deployUrl
-  const repositoryUrl = props.repositoryUrl
-  const imgCarousel = props.imgCarousel
-  const img = props.img
 
   const [indexImg, setIndexImg] = useState(0)
   const [unavailableLink, setUnavailableLink] = useState(deployUrl)
@@ -30,27 +39,45 @@ function ModalMoreInfo(props) {
     }
   }
 
+  const icons = [
+    {
+      name: "Html5",
+      icon: <RiHtml5Fill />,
+    },
+    {
+      name: "Reactjs",
+      icon: <RiReactjsFill />,
+    },
+    {
+      name: "Css3",
+      icon: <RiCss3Fill />,
+    },
+    {
+      name: "Tailwindcss",
+      icon: <SiTailwindcss />,
+    },
+    {
+      name: "Bootstrap",
+      icon: <SiBootstrap />,
+    },
+    {
+      name: "Javascript",
+      icon: <SiJavascript />,
+    },
+  ]
+
   return (
     <div className="modalMoreInfo">
       <div className="modalContainer">
         <h3> {name}</h3>
-        <div className="carousel">
-          <button onClick={handlerLeft} className="neumorphism imgBefore">
-            <MdArrowBackIos />
-          </button>
-          <img
-            className="modalImg"
-            src={process.env.PUBLIC_URL + imgCarousel[indexImg]}
-          />
-          <button onClick={handlerRigth} className="neumorphism imgNext">
-            <MdOutlineArrowForwardIos />
-          </button>
-        </div>
         <div className="tagsWrapper">
-          <h4 className="tagsTitle">Tags: </h4>
           <div className="tags">
-            {sortTags.map((x) => {
-              return <div className="tag"> {x} </div>
+            {sortTags.map((tag) => {
+              return (
+                <div className={`tag ${tag}`}>
+                  {icons.find((e) => e.name === tag)?.icon}
+                </div>
+              )
             })}
           </div>
         </div>

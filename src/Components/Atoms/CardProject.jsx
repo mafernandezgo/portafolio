@@ -22,20 +22,28 @@ function CardProject(props) {
     setShowName(!showName)
   }
 
+  console.log(showName)
   return (
-    <div onMouseOver={nameShow} onMouseOut={nameShow} className="cardProject">
+    <div
+      onMouseEnter={() => {
+        setShowName(true)
+      }}
+      onMouseLeave={() => setShowName(false)}
+      className="cardProject"
+    >
       {/* <div onClick={nameShow} className="cardProject"> */}
-      <h1 className={` cardProjectTitle ${showName === true && "active"}`}>
-        {name}
-      </h1>
       <img src={process.env.PUBLIC_URL + img} alt={name} />
-      <button
+      {/* <button onClick={modalOpen}>more Info</button> */}
+
+      {/* <img src={process.env.PUBLIC_URL + img} alt={name} /> */}
+      {/* <button
         onClick={modalOpen}
-        className={` openModal  ${showName === true && "active neumorphism"}`}
+        className="moreInfo neumorphism"
+        // className={` openModal  ${showName === true && "active neumorphism"}`}
       >
-        more Info
-      </button>
-      {showModal && (
+        +
+      </button> */}
+      {showName && (
         <ModalMoreInfo
           name={name}
           tags={tags}
@@ -45,11 +53,11 @@ function CardProject(props) {
           img={img}
         />
       )}
-      {showCloseIcon && (
+      {/* {showCloseIcon && (
         <a onClick={modalClose} className="iconClose">
           <GrClose />
         </a>
-      )}
+      )} */}
     </div>
   )
 }

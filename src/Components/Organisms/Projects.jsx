@@ -15,7 +15,7 @@ function Projects() {
         "/assets/Rick&Morty/Rick&Morty3.jpg",
         "/assets/Rick&Morty/Rick&Morty4.jpg",
       ],
-      tags: ["api", "react", "html y css"],
+      tags: ["Reactjs", "Html5", "Css3"],
       urlDeploy: "",
       urlRepository: "https://github.com/mafernandezgo/Rick-Morty-Api.git",
     },
@@ -28,7 +28,7 @@ function Projects() {
         "/assets/Faq/faq2.jpg",
         "/assets/Faq/faq3.jpg",
       ],
-      tags: ["javascript", "html y css", "responsive"],
+      tags: ["Javascript", "Html5", "Css3"],
       urlDeploy: "https://mafernandezgo.github.io/faq-accordion-card-main/",
       urlRepository:
         "https://github.com/mafernandezgo/faq-accordion-card-main.git",
@@ -37,7 +37,7 @@ function Projects() {
       id: "3",
       name: "Space tourism multi page website",
       img: "/assets/SpaceTourism/spaceTourism4.jpg",
-      tags: ["html y css", "react", "responsive"],
+      tags: ["Html5", "Css3", "Reactjs"],
       imgCarousel: [
         "/assets/SpaceTourism/spaceTourism1.jpg",
         "/assets/SpaceTourism/spaceTourism2.jpg",
@@ -51,14 +51,14 @@ function Projects() {
     },
     {
       id: "12",
-      name: "Menu Restaurant",
+      name: "Restaurant Menu",
       img: "/assets/MenuRestaurant/menuRestaurant1.jpg",
       imgCarousel: [
         "/assets/MenuRestaurant/menuRestaurant1.jpg",
         "/assets/MenuRestaurant/menuRestaurant2.jpg",
         "/assets/MenuRestaurant/menuRestaurant3.jpg",
       ],
-      tags: ["javascript", "html y css", "responsive"],
+      tags: ["Javascript", "Html5", "Css3"],
       urlDeploy: "https://mafernandezgo.github.io/Menu_JSVanilla/",
       urlRepository: "https://github.com/mafernandezgo/Menu_JSVanilla.git",
     },
@@ -72,7 +72,7 @@ function Projects() {
         "/assets/Sunnyside/Sunnyside3.jpg",
         "/assets/Sunnyside/Sunnyside4.jpg",
       ],
-      tags: ["react", "html y css"],
+      tags: ["Reactjs", "Html5", "Css3"],
       urlDeploy:
         "https://mafernandezgo.github.io/sunnyside-agency-landing-page-main/",
       urlRepository:
@@ -86,7 +86,7 @@ function Projects() {
         "/assets/Planner/planner1.jpg",
         "/assets/Planner/planner2.jpg",
       ],
-      tags: ["javascript", "html y css"],
+      tags: ["Javascript", "Html5", "Css3"],
       urlDeploy: "https://mafernandezgo.github.io/Planeador_Glassmorphism/",
       urlRepository:
         "https://github.com/mafernandezgo/Planeador_Glassmorphism.git",
@@ -100,7 +100,7 @@ function Projects() {
         "/assets/TipCalculator/tipCalculator2.jpg",
         "/assets/TipCalculator/tipCalculator3.jpg",
       ],
-      tags: ["javascript", "html y css"],
+      tags: ["Javascript", "Html5", "Css3"],
       urlDeploy: "https://mafernandezgo.github.io/Tip-Calculator/",
       urlRepository: "https://github.com/mafernandezgo/Tip-Calculator.git",
     },
@@ -113,7 +113,7 @@ function Projects() {
         "/assets/SingUp/singUp1.jpg",
         "/assets/SingUp/singUp3.jpg",
       ],
-      tags: ["html y css", "responsive"],
+      tags: ["Html5", "Css3"],
       urlDeploy:
         "https://mafernandezgo.github.io/intro-component-with-signup-form-master/",
       urlRepository:
@@ -129,7 +129,7 @@ function Projects() {
         "/assets/SwitchTheme/switchTheme3.jpg",
         "/assets/SwitchTheme/switchTheme2.jpg",
       ],
-      tags: ["responsive", "javascript", "html y css"],
+      tags: ["Javascript", "Html5", "Css3"],
       urlDeploy:
         "https://mafernandezgo.github.io/social-media-dashboard-with-theme-switcher-master/",
       urlRepository:
@@ -139,7 +139,7 @@ function Projects() {
       id: "1",
       name: "Weather App",
       img: "/assets/WeatherApp/desktop.jpg",
-      tags: ["javascript", "api", "responsive"],
+      tags: ["Javascript"],
       imgCarousel: [
         "/assets/WeatherApp/desktop.jpg",
         "/assets/WeatherApp/mobile.jpg",
@@ -158,7 +158,7 @@ function Projects() {
         "/assets/jobListing/jobListing4.jpg",
         "/assets/jobListing/jobListing5.jpg",
       ],
-      tags: ["react", "responsive"],
+      tags: ["Reactjs"],
       urlDeploy: "https://mafernandezgo.github.io/Job-Listing/",
       urlRepository: "https://github.com/mafernandezgo/Job-Listing.git",
     },
@@ -172,7 +172,7 @@ function Projects() {
     //     "/assets/InteractivePricing/interactivePricing3.jpg",
     //     "/assets/InteractivePricing/interactivePricing2.jpg",
     //   ],
-    //   tags: ["javascript", "responsive ", "html y css"],
+    //   tags: ["Javascript", "responsive ", "Html5", "Css3"],
     //   urlDeploy: "https://mafernandezgo.github.io/interactive-pricing/",
     //   urlRepository: "https://github.com/mafernandezgo/interactive-pricing.git",
     // },
@@ -185,7 +185,7 @@ function Projects() {
         "/assets/TodoApp/todoApp3.jpg",
         "/assets/TodoApp/todoApp2.jpg",
       ],
-      tags: ["react", "html y css", "responsive"],
+      tags: ["Reactjs", "Html5", "Css3"],
       urlDeploy: "https://mafernandezgo.github.io/todoApp/",
       urlRepository: "https://github.com/mafernandezgo/todoApp.git",
     },
@@ -199,7 +199,7 @@ function Projects() {
         "/assets/ecommerce/ecommerce3.jpg",
         "/assets/ecommerce/ecommerce4.jpg",
       ],
-      tags: ["react", "tailwind"],
+      tags: ["Reactjs", "Tailwindcss"],
       urlDeploy: "https://mafernandezgo.github.io/e-commerce/",
       urlRepository: "https://github.com/mafernandezgo/e-commerce.git",
     },
@@ -211,7 +211,7 @@ function Projects() {
         "/assets/quizzical/quizzical1.jpg",
         "/assets/quizzical/quizzical2.jpg",
       ],
-      tags: ["react"],
+      tags: ["Reactjs"],
       urlDeploy: "https://mafernandezgo.github.io/Quizzical/",
       urlRepository: "https://github.com/mafernandezgo/Quizzical.git",
     },
@@ -224,7 +224,7 @@ function Projects() {
         "/assets/tenzies/tenzies3.jpg",
         "/assets/tenzies/tenzies2.jpg",
       ],
-      tags: ["react", "responsive"],
+      tags: ["Reactjs"],
       urlDeploy: "https://mafernandezgo.github.io/tenzies/",
       urlRepository: "https://github.com/mafernandezgo/tenzies.git",
     },
@@ -245,32 +245,22 @@ function Projects() {
 
   return (
     <section id="projects" className="projects">
-      <Title name="projects" />
+      <Title name="Some projects I've been working on" />
       <div className="projectsMain">
-        {/* <div className="btnsProjects">
-                    <button onClick={handlerFilter } data-name="all" className="btnProjects neumorphism"> All</button>
-                    <button onClick={handlerFilter } data-name="api" className="btnProjects neumorphism"> Api</button>
-                    <button onClick={handlerFilter }  data-name="html y css" className="btnProjects neumorphism "> html & css</button>
-                    <button onClick={handlerFilter } data-name="responsive" className="btnProjects neumorphism"> Responsive Design</button>
-                    <button onClick={handlerFilter } data-name="javascript" className="btnProjects neumorphism"> Javascript</button>
-                    <button onClick={handlerFilter } data-name="react" className="btnProjects neumorphism"> react</button>
-                </div> */}
-        <div>
-          <div className="projectsGrid">
-            {data.map((x) => {
-              return (
-                <CardProject
-                  key={x.id}
-                  name={x.name}
-                  img={x.img}
-                  imgCarousel={x.imgCarousel}
-                  urlDeploy={x.urlDeploy}
-                  urlRepository={x.urlRepository}
-                  tags={x.tags}
-                />
-              )
-            })}
-          </div>
+        <div className="projectsGrid">
+          {data.map((x) => {
+            return (
+              <CardProject
+                key={x.id}
+                name={x.name}
+                img={x.img}
+                imgCarousel={x.imgCarousel}
+                urlDeploy={x.urlDeploy}
+                urlRepository={x.urlRepository}
+                tags={x.tags}
+              />
+            )
+          })}
         </div>
       </div>
     </section>

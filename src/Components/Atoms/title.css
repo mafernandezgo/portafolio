@@ -1,6 +1,12 @@
-.title{
-    margin:0;
-    position: absolute;
-    text-align: center;
-    width: 100%;
+.title {
+  margin: 1em auto;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .title {
+    display: none;
+  }
 }

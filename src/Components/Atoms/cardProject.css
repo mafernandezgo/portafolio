@@ -1,125 +1,143 @@
-
-.cardProject{
-    align-items: center;
-    border-radius: var(--radius);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    position: relative;
-    width: 100%;
+.cardProject {
+  align-items: center;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  width: 100%;
 }
 
-.cardProject img{
-    /* border: var(--border); */
-    /* max-width: 350px; */
-    border-radius: var(--radius);
-    box-sizing: border-box;
-    height: 100%;
-    position: relative;
-    width: 100%;
-    z-index: 1;
+.cardProject img {
+  /* border: var(--border); */
+  /* max-width: 350px; */
+  border-radius: var(--radius);
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 1;
 }
 
-.cardProject .cardProjectTitle{
-    align-items: center;
-    background: none;
-    color: transparent;
-    display: flex;
-    font-size: 0;
-    height: 100%;
-    justify-content: center;
-    margin: 0;
-    padding: 0px 0px;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: 100%;
-    z-index: 10;
+.cardProject .cardProjectTitle {
+  align-items: center;
+  background: none;
+  color: transparent;
+  display: flex;
+  font-size: 0;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 0px 0px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
-.cardProject .cardProjectTitle.active{
-    color: var(--blue);
-    font-size: 1.5em;
-    transition: all 0.5s cubic-bezier(0.82, -0.12, 1, 1);
+.cardProject .cardProjectTitle.active {
+  color: var(--blue);
+  font-size: 1.5em;
+  transition: all 0.5s cubic-bezier(0.82, -0.12, 1, 1);
 }
 
-.cardProject .openModal{
-    /* height:0rem; */
-    /* transition-delay: 0.3s; */
-    /* transition-property:  border, color;
+.cardProject .openModal {
+  /* height:0rem; */
+  /* transition-delay: 0.3s; */
+  /* transition-property:  border, color;
     /* transition: all 0.5s linear; */
-    /* transition: color 0.5s linear 1s; */
-    background-color: transparent;
-    border: 1px solid transparent;
-    color: transparent;
-    font-size: 0rem;
-    justify-content: center;
-    position: absolute;
-    text-transform: capitalize;
-    top: 55%;
-    transition-duration: 0.5s;
-    transition-timing-function: linear ;
-    transition: background-color 0.3s ease-in-out, 
-                color 0.3s ease-in-out ;
-    width: 10rem;
-    z-index: 10;
+  /* transition: color 0.5s linear 1s; */
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: transparent;
+  font-size: 0rem;
+  justify-content: center;
+  position: absolute;
+  text-transform: capitalize;
+  top: 55%;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  width: 10rem;
+  z-index: 10;
 }
 
-.cardProject .openModal.active{
-    background-color: var(--blueSapphire);
-    box-shadow: none;
-    color: var(--blue);
-    cursor: pointer;
-    font-size: 0.7rem;
-    height:2rem;
-    margin: 10px;
-    /* border: var(--borderV) */
-
+.cardProject .openModal.active {
+  background-color: var(--blueSapphire);
+  box-shadow: none;
+  color: var(--blue);
+  cursor: pointer;
+  font-size: 0.7rem;
+  height: 2rem;
+  margin: 10px;
+  /* border: var(--borderV) */
 }
 
-.cardProject .openModal.active:hover{
-    background-color: var(--viridianGreenT);
-    color: white;
+.cardProject .openModal.active:hover {
+  background-color: var(--viridianGreenT);
+  color: white;
 }
 
-.cardProject::after{
-    background: transparent;
-    border-radius: var(--radius);
-    border:1px solid transparent;
-    bottom: 0;
-    box-sizing: border-box;
-    content: "";
-    height: 0%;
-    left:0;
-    max-height: auto;
-    position: absolute;
-    transition: all 0.6s linear;
-    width: 100%;
-    z-index: 3;
+/* .cardProject::after {
+  background: transparent;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  bottom: 0;
+  box-sizing: border-box;
+  content: "";
+  height: 0%;
+  left: 0;
+  max-height: auto;
+  position: absolute;
+  transition: all 0.6s linear;
+  width: 100%;
+  z-index: 3;
+} */
+
+.cardProject:hover::after {
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.9);
+  height: 100%;
+  z-index: 1;
 }
 
-.cardProject:hover::after{
-    backdrop-filter: blur(5px);
-    background: rgba(255, 255, 255, 0.9);
-    height: 100%;
-    z-index: 1;
+.iconClose {
+  font-size: 1.5em;
+  height: 1rem;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  top: 0rem;
+  z-index: 20;
 }
 
-.iconClose{
-    /* border: 1px solid red; */
-    color: red;
-    font-size: 1.5em;
-    height: 1rem;
-    margin: 0.5rem;
-    padding: 1rem;
-    position: fixed;
-    right: 0;
-    top: 5rem;
-    z-index: 100;
+.moreInfo {
+  align-items: center;
+  background: white;
+  border-radius: var(--radius©);
+  /* border: 1px solid black; */
+  bottom: 0;
+  /* color: black; */
+  display: flex;
+  font-size: 32px;
+  font-weight: lighter;
+  height: 40px;
+  justify-content: center;
+  margin: 1rem;
+  position: absolute;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+  width: 40px;
+  z-index: 10;
 }
 
-@media (max-width:800px){
+/* .moreInfo:hover {
+  color: var(--viridianGreen);
+  font-size: 32px;
+  border: 1px solid var(--viridianGreen);
+  background: rgba(0, 0, 0, 0.301);
+} */
+
+@media (max-width: 800px) {
 }
-
-
-

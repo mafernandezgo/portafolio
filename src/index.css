@@ -1,34 +1,34 @@
-:root{
+:root {
   --white: #000;
   --richBack: rgb(0, 18, 25);
-  --blueSapphire: #9FC131;
-  --points:rgba(241, 237, 238,0.5);
-  --viridianGreen: #DBF227;
-  --viridianGreenOpacity: rgb(220, 237, 49,0.4);
+  --blueSapphire: #9fc131;
+  --points: rgba(241, 237, 238, 0.5);
+  --viridianGreen: #61dafb;
+  --viridianGreenOpacity: rgb(220, 237, 49, 0.4);
   --viridianGreenT: #5062664f;
-  --h2Color: #042940;;
-  --blue:#042940;
-  --comforter: 'Comforter', cursive;
-  --poppins: 'Poppins', sans-serif;
-  --raleway: 'Raleway', sans-serif;
-  --rockSalt: 'Rock Salt', cursive;
+  --h2Color: #042940;
+  --blue: #042940;
+  --comforter: "Comforter", cursive;
+  --poppins: "Poppins", sans-serif;
+  --raleway: "Raleway", sans-serif;
+  --rockSalt: "Rock Salt", cursive;
   --border: 1px solid #506266;
-  --borderV: 2px solid rgba(220, 237, 49,0.4);
+  --borderV: 2px solid rgba(220, 237, 49, 0.4);
   --radius: 4px;
 }
 
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   /* background: rgba(61, 84, 103) */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-h2{
+h2 {
   align-items: center;
   display: flex;
   font-size: 3.5rem;
@@ -39,38 +39,37 @@ h2{
   color: var(--h2Color);
 }
 
-h3{
-  color: var(--blueSapphire);
+h3 {
+  color: var(--viridianGreen);
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: capitalize;
   margin: 0;
 }
 
-h4{
+h4 {
   font-weight: 300;
   margin: 0;
 }
 
-p{
+p {
   color: var(--blue);
 }
 
-.neumorphism{
+.neumorphism {
   border-radius: 3px;
   transition: all 0.5s linear;
   margin: 10px;
   box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.6),
-              -5px -5px 8px rgba(255, 255, 255,0.5);
+    -5px -5px 8px rgba(255, 255, 255, 0.5);
   padding: 10px;
   border: none;
-  background-color:white ;
-  color:var(--blue);
+  background-color: white;
+  color: var(--blue);
 }
 
-.neumorphism:hover{
+.neumorphism:hover {
   background-color: var(--viridianGreen);
   box-shadow: inset 5px 5px 8px rgba(163, 177, 198, 0.4),
-  -5px -5px 8px rgba(255, 255, 255,0.5);
+    -5px -5px 8px rgba(255, 255, 255, 0.5);
 }
-

@@ -1,78 +1,89 @@
-
-.navBar{
-    align-items: center;
-    display: flex;
-    height: 3em;
-    justify-content: space-around;
-    width: 50%;
+.navBar {
+  align-items: center;
+  display: flex;
+  height: 3em;
+  justify-content: space-around;
+  width: 50%;
 }
 
-.navBar ul{
-    display: flex;
+.navBar ul {
+  display: flex;
 }
 
-.navBar a{
-    align-items: center;
+.navBar a {
+  align-items: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  width: 7em;
+}
+
+.navBar a:hover {
+  color: var(--viridianGreen);
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.navBar a:active {
+  color: var(--viridianGreen);
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.navBar a::before,
+.navBar a::after {
+  border: 1px solid transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  margin: 0.5em auto;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  width: 0%;
+}
+
+/* .navBar a:hover::before, */
+.navBar a:hover::after {
+  width: 100%;
+  border: 1px solid var(--viridianGreen);
+}
+
+@media (max-width: 800px) {
+  .navBar {
+    background-color: rgba(90, 89, 89, 0.904);
+    backdrop-filter: blur(5px);
+    display: none;
+    flex-direction: column;
+    height: 0;
+    justify-content: flex-start;
+    position: fixed;
+    right: 0;
+    top: 4rem;
+    transition: all 2s linear;
     color: white;
+  }
+
+  .navBar.active {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .navBar a {
+    color: white;
+  }
+  .navBar ul {
     display: flex;
     flex-direction: column;
-    font-weight: 200;
-    letter-spacing: 0;
-    text-decoration: none;
-    transition: all 0.4s ease-in-out;
-    width: 7em;
-}
-
-.navBar a:hover{
-    color: var(--viridianGreen);
-    letter-spacing: 0.1em;
-}
-
-.navBar a:active{
-    color: var(--viridianGreen);
-    letter-spacing: 0.1em;
-}
-
-.navBar a::before, 
-.navBar a::after{
-    border: 1px solid transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    margin: 0.5em auto;
-    position: relative;
-    transition: all 0.3s ease-in-out;
-    width: 0%;
-}
-
-.navBar a:hover::before, 
-.navBar a:hover::after{
-    width: 100%;
-    border: 1px solid var(--viridianGreen);
-}
-
-@media (max-width:800px){
-    .navBar{
-        background-color: var(--blue);
-        display: none;
-        flex-direction: column;
-        height: 0;
-        justify-content: flex-start;
-        position: fixed;
-        right: 0;
-        top: 4rem;
-        transition: all 2s linear;
-    }
-    
-    .navBar.active{
-        display: flex;
-        height: 100vh;    
-    }
-
-    .navBar ul{
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
+    margin: 0;
+    padding: 0;
+    color: white;
+    justify-content: space-evenly;
+    height: 100%;
+    font-size: 20px;
+  }
 }
